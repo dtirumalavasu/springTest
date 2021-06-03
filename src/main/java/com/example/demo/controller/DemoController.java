@@ -18,4 +18,14 @@ public class DemoController {
 
         return emp;
     }
+    @RequestMapping(value = "/employee1", method = RequestMethod.GET)
+    public Employee getEmp(){
+
+        Employee emp1 = new Employee();
+        System.out.println("Employee"+emp);
+               emp1.setEmpNo(111);
+               emp1.setEmpName("vasuharsha");
+               emp1.setSal(300000);
+
+        return emp1;
 }
